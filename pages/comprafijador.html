@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Genderless Makeup</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="navbar">
+    <ul>
+        <li><a href="../index.html">Productos</a></li>
+        <li><a href="../preguntas.html">Preguntas Frecuentes</a></li>
+    </ul>
+    </div>
+
+    <h1>Fijador del maquillaje</h1>
+    <div class="divi"></div>
+
+    <div class="cardcom">
+        <div class="card-imagecom">
+        <img src="../img/fijador.jpg" alt="Imagen del producto">
+        </div>
+        <div class="card-contentcom">
+        <h3 class="card-titlecom">Fijador del maquillaje</h3>
+        <p class="card-descriptioncom">Nuestro fijador del maquillaje es el toque final perfecto para mantener tu maquillaje fresco y duradero durante todo el día. Su fórmula ligera y de secado rápido crea una fina capa invisible que ayuda a sellar y fijar tu maquillaje, evitando que se corra, se desvanezca o se deslice.
+
+            Este fijador proporciona un acabado natural y sin brillos, dejando tu piel con un aspecto radiante y mate. Además, ayuda a controlar el exceso de grasa y a minimizar la apariencia de los poros, para una piel más suave y uniforme.
+            
+            Aplícalo después de finalizar tu rutina de maquillaje, a una distancia adecuada del rostro, y deja que se seque por completo. Notarás cómo tu maquillaje se mantiene intacto por más tiempo, incluso en condiciones de humedad o calor.
+            
+            Con nuestro fijador del maquillaje, disfruta de un look impecable y fresco durante horas, sin la necesidad de retoques constantes. Mantén tu maquillaje en su lugar y siéntete segura y confiada en cualquier ocasión.</p>
+        <div class="card-selectcom">
+            <label for="quantity">Cantidad:</label>
+            <select name="quantity" id="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            </select>
+        </div>
+        <p class="card-pricecom">Precio: $180 MXN</p>
+            <a href="#" class="card-buttoncom">Comprar</a>
+        </div>
+    </div>      
+
+    <script>
+        const confirmButton = document.querySelector('.card-buttoncom');
+
+        confirmButton.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        if (confirm('¿Desea confirmar la compra?')) {
+            // Redireccionar a la página de agradecimiento
+            window.location.href = 'gracias.html';
+        } else {
+            // Cerrar la alerta
+            // No se realizará ninguna acción adicional
+        }
+});
+
+    </script>
+
+    <footer class="footer">
+        <div class="footer-section">
+            <h4 class="footer-heading">Genderless Makeup</h4>
+        </div>
+        <div class="footer-section">
+            <h5 class="footer-subheading">Contacto:</h5>
+            <p class="footer-contact">genderlessmakeup@gmail.com | Teléfono:  951 509 5996</p>
+        </div>
+        <div class="footer-section">
+            <h5 class="footer-subheading">Preguntas frecuentes:</h5>
+            <p class="footer-link"><a href="../preguntas.html">Enlace a la página de preguntas frecuentes</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

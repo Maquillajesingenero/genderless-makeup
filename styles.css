@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+body{
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffecfd;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+/* Estilos personalizados para el menú */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.137);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+}
+
+.navbar li a:hover {
+    color: #666;
+}
+
+/* Estilos para el título */
+h1 {
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.title{
+    font-size: 20px;
+    text-align: center;
+}
+
+.subtitle{
+    font-size: 16px;
+    text-align: center;
+}
+
+.divi {
+    margin: 50px auto;
+    width: 80%;
+    text-align: center;
+    height: 3px;
+    background-color: #696969;
+}
+
+.card {
+    display: flex;
+    margin: 10px 300px 10px 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.card-image {
+    flex: 0 0 30%;
+    margin-right: 20px;
+}
+
+.card-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-text {
+    flex: 0 0 70%;
+}
+
+.card-title {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.card-description {
+    margin: 10px 20px 0 0;
+}
+
+.card-price {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.card-button {
+    padding: 8px 12px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 10px 20px 0 20px;
+    float: right;
+}
+
+.faq-section {
+    margin: 20px 200px 0 200px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    font-weight: bold;
+}
+
+.faq-answer {
+    margin-top: 10px;
+    margin:  15px 0 15px 20px;
+}
+
+.footer {
+    background-color: #ffffff;
+    margin: 100px 0 0 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-section {
+    margin-bottom: 10px;
+}
+
+.footer-heading {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-subheading {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.footer-contact,
+.footer-link {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+
+.cardcom {
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .card-imagecom {
+    margin: 0 50px 0 100px;
+  }
+  
+  .card-imagecom img {
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .card-contentcom {
+    width: 100vh;
+    padding: 20px 30px;
+    height: auto;
+    background-color: #f8f8f8;
+  }
+  
+  .card-titlecom {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  
+  .card-descriptioncom {
+    margin: 10px 20px 0 0;
+    text-align: justify;
+  }
+  
+  .card-pricecom {
+    margin-top: 50px;
+    font-weight: 500;
+  }
+  
+  .card-buttoncom {
+    padding: 8px 12px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 10px -10px 0 0;
+    float: right;
+  }
+
+  .card-selectcom{
+    margin: 50px 20px 0 0;
+  }
+  
+  .card-selectcom label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .card-selectcom select {
+    appearance: none;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 150px;
+    border-radius: 4px;
+  }
+  
+  .card-selectcom select:focus {
+    outline: none;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .gracias{
+    text-align: center;
+    margin: 20px 200px 50px 200px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #f8f8f8;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .arrow {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid #555;
+    border-left: 2px solid #555;
+    transform: rotate(-45deg);
+    transition: border-color 0.3s ease;
+  }
+  
+  .back-button:hover .arrow {
+    border-color: #fff;
+  }
+  

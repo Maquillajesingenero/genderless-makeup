@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Genderless Makeup</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="navbar">
+    <ul>
+        <li><a href="../index.html">Productos</a></li>
+        <li><a href="../preguntas.html">Preguntas Frecuentes</a></li>
+    </ul>
+    </div>
+
+    <h1>Base para Pestañas y Cejas</h1>
+    <div class="divi"></div>
+
+    <div class="cardcom">
+        <div class="card-imagecom">
+        <img src="../img/basepestañas.jpg" alt="Imagen del producto">
+        </div>
+        <div class="card-contentcom">
+        <h3 class="card-titlecom">Base para Pestañas y Cejas</h3>
+        <p class="card-descriptioncom">Nuestra base para pestañas y cejas es un producto esencial para realzar y preparar tus pestañas y cejas antes de aplicar la máscara o el lápiz de cejas. Su fórmula nutritiva y acondicionadora ayuda a fortalecer y proteger tus pestañas y cejas, mientras les proporciona una base suave y uniforme.
+
+            Esta base actúa como una capa protectora entre tus pestañas y la máscara, permitiendo una aplicación más fácil y uniforme. Además, ayuda a intensificar el color y la duración de la máscara de pestañas, asegurando un aspecto más voluminoso y definido.
+            
+            Para tus cejas, esta base suaviza y acondiciona los vellos, permitiendo una aplicación precisa del lápiz o el polvo de cejas. Ayuda a mantener tus cejas en su lugar durante todo el día, evitando que se despeinen o se desvanezcan.
+            
+            Con nuestra base para pestañas y cejas, obtendrás un resultado más impactante y duradero en tu maquillaje de ojos. Disfruta de unas pestañas más voluminosas y unas cejas definidas con este producto imprescindible en tu rutina de belleza.</p>
+        <div class="card-selectcom">
+            <label for="quantity">Cantidad:</label>
+            <select name="quantity" id="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            </select>
+        </div>
+        <p class="card-pricecom">Precio: $120 MXN</p>
+            <a href="#" class="card-buttoncom">Comprar</a>
+        </div>
+    </div>      
+
+    <script>
+        const confirmButton = document.querySelector('.card-buttoncom');
+
+        confirmButton.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        if (confirm('¿Desea confirmar la compra?')) {
+            // Redireccionar a la página de agradecimiento
+            window.location.href = 'gracias.html';
+        } else {
+            // Cerrar la alerta
+            // No se realizará ninguna acción adicional
+        }
+});
+
+    </script>
+
+    <footer class="footer">
+        <div class="footer-section">
+            <h4 class="footer-heading">Genderless Makeup</h4>
+        </div>
+        <div class="footer-section">
+            <h5 class="footer-subheading">Contacto:</h5>
+            <p class="footer-contact">genderlessmakeup@gmail.com | Teléfono:  951 509 5996</p>
+        </div>
+        <div class="footer-section">
+            <h5 class="footer-subheading">Preguntas frecuentes:</h5>
+            <p class="footer-link"><a href="../preguntas.html">Enlace a la página de preguntas frecuentes</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

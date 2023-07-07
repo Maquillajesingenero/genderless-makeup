@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Genderless Makeup</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="navbar">
+    <ul>
+        <li><a href="../index.html">Productos</a></li>
+        <li><a href="../preguntas.html">Preguntas Frecuentes</a></li>
+    </ul>
+    </div>
+
+    <h1>Set de brochas y pinseles de maquillaje profesionales</h1>
+    <div class="divi"></div>
+
+    <div class="cardcom">
+        <div class="card-imagecom">
+        <img src="../img/brochas.jpg" alt="Imagen del producto">
+        </div>
+        <div class="card-contentcom">
+        <h3 class="card-titlecom">Set de brochas y pinseles de maquillaje profesionales</h3>
+        <p class="card-descriptioncom">Nuestro set de brochas y pinceles de maquillaje profesionales es la herramienta perfecta para lograr un maquillaje impecable y de aspecto profesional. Este set incluye una variedad de brochas y pinceles de alta calidad, diseñados para aplicar y difuminar los productos de maquillaje de manera precisa y uniforme.
+
+            Cada brocha y pincel está hecho con cerdas suaves y duraderas, que permiten una aplicación suave y sin esfuerzo. Los mangos ergonómicos proporcionan un agarre cómodo y seguro, facilitando el control y la precisión en cada movimiento.
+            
+            Con este set, podrás crear una amplia gama de looks, desde un maquillaje natural y discreto hasta un maquillaje más audaz y glamoroso. Podrás aplicar bases, polvos, rubores, sombras de ojos, delineadores y más, logrando resultados profesionales en cada aplicación.
+            
+            Además, nuestro set de brochas y pinceles viene en un estuche elegante y portátil, ideal para llevarlo contigo mientras viajas o para mantener tus herramientas de maquillaje organizadas en casa.
+            
+            Descubre la diferencia que un set de brochas y pinceles de maquillaje profesionales puede hacer en tu rutina de belleza. Experimenta la comodidad, la precisión y la calidad de nuestras brochas y pinceles, y logra un maquillaje impecable en cada ocasión.</p>
+        <div class="card-selectcom">
+            <label for="quantity">Cantidad:</label>
+            <select name="quantity" id="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            </select>
+        </div>
+        <p class="card-pricecom">Precio: $350 MXN</p>
+            <a href="#" class="card-buttoncom">Comprar</a>
+        </div>
+    </div>      
+
+    <script>
+        const confirmButton = document.querySelector('.card-buttoncom');
+
+        confirmButton.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        if (confirm('¿Desea confirmar la compra?')) {
+            // Redireccionar a la página de agradecimiento
+            window.location.href = 'gracias.html';
+        } else {
+            // Cerrar la alerta
+            // No se realizará ninguna acción adicional
+        }
+});
+
+    </script>
+
+    <footer class="footer">
+        <div class="footer-section">
+            <h4 class="footer-heading">Genderless Makeup</h4>
+        </div>
+        <div class="footer-section">
+            <h5 class="footer-subheading">Contacto:</h5>
+            <p class="footer-contact">genderlessmakeup@gmail.com | Teléfono:  951 509 5996</p>
+        </div>
+        <div class="footer-section">
+            <h5 class="footer-subheading">Preguntas frecuentes:</h5>
+            <p class="footer-link"><a href="../preguntas.html">Enlace a la página de preguntas frecuentes</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

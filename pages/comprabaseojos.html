@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Genderless Makeup</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="navbar">
+    <ul>
+        <li><a href="../index.html">Productos</a></li>
+        <li><a href="../preguntas.html">Preguntas Frecuentes</a></li>
+    </ul>
+    </div>
+
+    <h1>Base de sombra de ojos</h1>
+    <div class="divi"></div>
+
+    <div class="cardcom">
+        <div class="card-imagecom">
+        <img src="../img/baseojos.jpg" alt="Imagen del producto">
+        </div>
+        <div class="card-contentcom">
+        <h3 class="card-titlecom">Base de sombra de ojos</h3>
+        <p class="card-descriptioncom">Nuestra base de sombra de ojos es el complemento perfecto para lograr un maquillaje de ojos impecable y de larga duración. Su fórmula ligera y cremosa se aplica suavemente sobre los párpados, proporcionando una base uniforme y sin imperfecciones para realzar el color y la intensidad de tus sombras favoritas.
+
+            Esta base de sombra de ojos ayuda a aumentar la durabilidad y la pigmentación de tus sombras, evitando que se acumulen en los pliegues y se desvanezcan a lo largo del día. Además, su textura suave facilita la aplicación y difuminado de las sombras, permitiéndote crear looks de maquillaje versátiles y profesionales.
+            
+            Disponible en una variedad de tonos neutros y vibrantes, nuestra base de sombra de ojos se adapta a cualquier estilo y ocasión. Ya sea que busques un aspecto natural y discreto o un look más audaz y llamativo, esta base te brinda la base perfecta para resaltar tus ojos con confianza y estilo.
+            
+            ¡Descubre el secreto para una mirada radiante y duradera con nuestra base de sombra de ojos!</p>
+        <div class="card-selectcom">
+            <label for="quantity">Cantidad:</label>
+            <select name="quantity" id="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            </select>
+        </div>
+        <p class="card-pricecom">Precio: $150 MXN</p>
+            <a href="#" class="card-buttoncom">Comprar</a>
+        </div>
+    </div>      
+
+    <script>
+        const confirmButton = document.querySelector('.card-buttoncom');
+
+        confirmButton.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        if (confirm('¿Desea confirmar la compra?')) {
+            // Redireccionar a la página de agradecimiento
+            window.location.href = 'gracias.html';
+        } else {
+            // Cerrar la alerta
+            // No se realizará ninguna acción adicional
+        }
+});
+
+    </script>
+
+    <footer class="footer">
+        <div class="footer-section">
+            <h4 class="footer-heading">Genderless Makeup</h4>
+        </div>
+        <div class="footer-section">
+            <h5 class="footer-subheading">Contacto:</h5>
+            <p class="footer-contact">genderlessmakeup@gmail.com | Teléfono:  951 509 5996</p>
+        </div>
+        <div class="footer-section">
+            <h5 class="footer-subheading">Preguntas frecuentes:</h5>
+            <p class="footer-link"><a href="../preguntas.html">Enlace a la página de preguntas frecuentes</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
